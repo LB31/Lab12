@@ -27,7 +27,7 @@ public class ScrabbleCheater {
 	}
 	
 	public void run(){
-		findPermuations(initialInput);
+		findPermutations(initialInput);
 		implementDict();
 		String[] theResults = findCheatWord(permutations);
 		
@@ -125,7 +125,7 @@ public class ScrabbleCheater {
 	// removes in each run a single letter, sorts the ArrayList, assigns it
 	// again to a String
 	// adds the String to a HashMap and calls itself recursively
-	public void findPermuations(String input) {
+	public void findPermutations(String input) {
 		if (input.length() > 2) {
 
 			String first = input.toLowerCase();
@@ -142,7 +142,7 @@ public class ScrabbleCheater {
 				}
 
 				permutations.add(str);
-				findPermuations(str);
+				findPermutations(str);
 
 			}
 
