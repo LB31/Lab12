@@ -124,7 +124,7 @@ public class ScrabbleCheater {
 	// converts the single letters of a String to an ArrayList
 	// removes in each run a single letter, sorts the ArrayList, assigns it
 	// again to a String
-	// adds the String to a HashMap and calls itself recursively
+	// adds the String to a HashSet and calls itself recursively
 	public void findPermutations(String input) {
 		if (input.length() > 2) {
 
